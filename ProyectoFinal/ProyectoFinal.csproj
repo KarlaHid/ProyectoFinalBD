@@ -60,10 +60,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="addClientes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="addClientes.xaml.cs">
+      <DependentUpon>addClientes.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -74,11 +81,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MiBD\Persona.cs" />
+    <Compile Include="MiBD\Clientes.cs" />
+    <Compile Include="MiBD\DetallesPedido.cs" />
+    <Compile Include="MiBD\Empleados.cs" />
+    <Compile Include="MiBD\Pedidos.cs" />
     <Compile Include="MiBD\ProyectoFinal.cs" />
     <Compile Include="Migrations\201511131706015_proyecto.cs" />
     <Compile Include="Migrations\201511131706015_proyecto.Designer.cs">
       <DependentUpon>201511131706015_proyecto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511181628308_creacionTablas.cs" />
+    <Compile Include="Migrations\201511181628308_creacionTablas.Designer.cs">
+      <DependentUpon>201511181628308_creacionTablas.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -96,6 +110,9 @@
     </Compile>
     <EmbeddedResource Include="Migrations\201511131706015_proyecto.resx">
       <DependentUpon>201511131706015_proyecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511181628308_creacionTablas.resx">
+      <DependentUpon>201511181628308_creacionTablas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
