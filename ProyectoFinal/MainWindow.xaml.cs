@@ -60,5 +60,13 @@ namespace ProyectoFinal
             ob.Show();
             this.Close();
         }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            addDetalles ob = new addDetalles();
+            ob.Show();
+            this.Close();
+
+        }
     }
 }
