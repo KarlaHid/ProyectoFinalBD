@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using ProyectoFinal.MiBD;
 
 namespace ProyectoFinal
 {
@@ -22,6 +23,20 @@ namespace ProyectoFinal
         public addClientes()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            //instanciar bd
+            ProyectoFinal.MiBD.ProyectoFinal db = new ProyectoFinal.MiBD.ProyectoFinal();
+
+            Clientes client = new Clientes();
+            client.nomCliente = txtnomC.Text;
+            client.telCliente = txttelC.Text;
+
+
+            db.Cliente.Add(client);
+            db.SaveChanges();
         }
     }
 }

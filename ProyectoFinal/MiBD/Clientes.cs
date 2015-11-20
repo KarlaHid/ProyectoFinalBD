@@ -12,6 +12,6 @@ namespace ProyectoFinal.MiBD
         [Key]
         public int idCliente { get; set; }
         public string nomCliente { get; set; }
-        public int telCliente { get; set; }
+        public string telCliente { get; set; }
     }
 }

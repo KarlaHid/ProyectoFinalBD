@@ -122,6 +122,14 @@
     <Compile Include="Migrations\201511181628308_creacionTablas.Designer.cs">
       <DependentUpon>201511181628308_creacionTablas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511201657383_correcciones.cs" />
+    <Compile Include="Migrations\201511201657383_correcciones.Designer.cs">
+      <DependentUpon>201511201657383_correcciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511201700451_correccionesv2.cs" />
+    <Compile Include="Migrations\201511201700451_correccionesv2.Designer.cs">
+      <DependentUpon>201511201700451_correccionesv2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -141,6 +149,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511181628308_creacionTablas.resx">
       <DependentUpon>201511181628308_creacionTablas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511201657383_correcciones.resx">
+      <DependentUpon>201511201657383_correcciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511201700451_correccionesv2.resx">
+      <DependentUpon>201511201700451_correccionesv2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
