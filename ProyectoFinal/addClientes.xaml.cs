@@ -37,6 +37,30 @@ namespace ProyectoFinal
 
             db.Cliente.Add(client);
             db.SaveChanges();
+            MessageBox.Show("Datos correctamente guardados");
+           
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
+
+            //ProyectoFinal.MiBD.Clientes db = new ProyectoFinal.MiBD.Clientes();
+            ProyectoFinal.MiBD.ProyectoFinal db = new ProyectoFinal.MiBD.ProyectoFinal();
+
+                int id = int.Parse(txtid.Text);
+                var cl = db.Cliente.SingleOrDefault(x => x.idCliente == id);
+                //where x.id == id
+                //select x;
+                if (cl != null)
+                {
+                    db.Cliente.Remove(cl);
+                   
+                    db.SaveChanges();
+                    MessageBox.Show("Datos correctamente eliminados");
+
+                }
+            
         }
     }
 }
