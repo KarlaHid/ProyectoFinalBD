@@ -64,12 +64,40 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="addDetalles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="addEmpleados.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="addPedidos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="addProductos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Compile Include="addClientes.xaml.cs">
       <DependentUpon>addClientes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="addDetalles.xaml.cs">
+      <DependentUpon>addDetalles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="addEmpleados.xaml.cs">
+      <DependentUpon>addEmpleados.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="addPedidos.xaml.cs">
+      <DependentUpon>addPedidos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="addProductos.xaml.cs">
+      <DependentUpon>addProductos.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>

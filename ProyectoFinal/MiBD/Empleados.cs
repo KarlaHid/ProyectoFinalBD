@@ -12,6 +12,6 @@ namespace ProyectoFinal.MiBD
        [Key]
         public int idEmpleado { get; set; }
         public string nomEmpleado { get; set; }
-      
+        public int sueldo { get; set; }
     }
 }

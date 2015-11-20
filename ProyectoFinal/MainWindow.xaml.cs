@@ -24,5 +24,41 @@ namespace ProyectoFinal
         {
             InitializeComponent();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            addClientes ob = new addClientes();
+            
+
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            addClientes ob = new addClientes();
+            ob.Show();
+            this.Close();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            addProductos ob = new addProductos();
+            ob.Show();
+            this.Close();
+
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            addEmpleados ob = new addEmpleados();
+            ob.Show();
+            this.Close();
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            addPedidos ob = new addPedidos();
+            ob.Show();
+            this.Close();
+        }
     }
 }

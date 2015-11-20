@@ -1,0 +1,20 @@
+﻿<Window x:Class="ProyectoFinal.addDetalles"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="addDetalles" Height="458.427" Width="382.022">
+    <Grid>
+        <Label Content="Registro Detalles del Producto" HorizontalAlignment="Left" Margin="72,39,0,0" VerticalAlignment="Top" Width="226" FontSize="16"/>
+        <Label Content="idPedido" HorizontalAlignment="Left" Margin="72,108,0,0" VerticalAlignment="Top" Width="85" FontSize="16"/>
+        <Label Content="idProducto" HorizontalAlignment="Left" Margin="72,166,0,0" VerticalAlignment="Top" Width="85" FontSize="16"/>
+        <Label Content="Precio" HorizontalAlignment="Left" Margin="72,218,0,0" VerticalAlignment="Top" Width="85" FontSize="16"/>
+        <Label Content="Cantidad" HorizontalAlignment="Left" Margin="72,268,0,0" VerticalAlignment="Top" Width="85" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="190,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="190,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="190,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="190,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="GUARDAR" HorizontalAlignment="Left" Margin="24,367,0,0" VerticalAlignment="Top" Width="92" Height="37"/>
+        <Button Content="BORRAR" HorizontalAlignment="Left" Margin="138,367,0,0" VerticalAlignment="Top" Width="89" Height="37" />
+        <Button Content="REGRESAR MENU" HorizontalAlignment="Left" Margin="245,367,0,0" VerticalAlignment="Top" Width="109" Height="37"/>
+
+    </Grid>
+</Window>
