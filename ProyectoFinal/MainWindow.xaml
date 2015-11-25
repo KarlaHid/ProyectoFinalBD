@@ -9,6 +9,8 @@
         <Button Content="PEDIDOS" HorizontalAlignment="Left" Margin="55,261,0,0" VerticalAlignment="Top" Width="119" Height="28" Click="Button_Click_5"/>
         <Button Content="EMPLEADOS" HorizontalAlignment="Left" Margin="55,214,0,0" VerticalAlignment="Top" Width="119" Height="28" Click="Button_Click_4"/>
         <Button Content="DETALLES PEDIDOS" HorizontalAlignment="Left" Margin="55,306,0,0" VerticalAlignment="Top" Width="119" Height="30" Click="Button_Click_6"/>
+        <Button Content="CONSULTAR&#xD;&#xA;   PEDIDOS&#xD;&#xA;" HorizontalAlignment="Left" Margin="329,163,0,0" VerticalAlignment="Top" Width="124" Height="34"/>
+        <Button Content="CONSULTAR&#xD;&#xA; PRODUCTOS" HorizontalAlignment="Left" Margin="329,228,0,0" VerticalAlignment="Top" Width="124" Height="34"/>
 
     </Grid>
 </Window>
