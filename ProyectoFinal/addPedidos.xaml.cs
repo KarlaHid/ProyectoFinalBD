@@ -42,5 +42,30 @@ namespace ProyectoFinal
             db.SaveChanges();
             MessageBox.Show("Datos correctamente guardados");
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            //ProyectoFinal.MiBD.Clientes db = new ProyectoFinal.MiBD.Clientes();
+            ProyectoFinal.MiBD.ProyectoFinal db = new ProyectoFinal.MiBD.ProyectoFinal();
+
+            int id = int.Parse(tp1.Text);
+            var ped = db.Pedido.SingleOrDefault(x => x.idPedido == id);
+            //where x.id == id
+            //select x;
+            if (ped != null)
+            {
+                db.Pedido.Remove(ped);
+
+                db.SaveChanges();
+                MessageBox.Show("Datos correctamente eliminados");
+            }
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            MainWindow ob = new MainWindow();
+            ob.Show();
+            this.Close();
+        }
     }
 }

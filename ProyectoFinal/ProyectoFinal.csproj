@@ -113,6 +113,7 @@
     <Compile Include="MiBD\DetallesPedido.cs" />
     <Compile Include="MiBD\Empleados.cs" />
     <Compile Include="MiBD\Pedidos.cs" />
+    <Compile Include="MiBD\Productos.cs" />
     <Compile Include="MiBD\ProyectoFinal.cs" />
     <Compile Include="Migrations\201511131706015_proyecto.cs" />
     <Compile Include="Migrations\201511131706015_proyecto.Designer.cs">

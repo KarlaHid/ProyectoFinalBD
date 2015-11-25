@@ -62,5 +62,12 @@ namespace ProyectoFinal
                 }
             
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            MainWindow ob = new MainWindow();
+            ob.Show();
+            this.Close();
+        }
     }
 }

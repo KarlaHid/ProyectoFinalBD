@@ -32,11 +32,36 @@ namespace ProyectoFinal
 
             pro.idProducto = int.Parse(pro1.Text);
             pro.nomProducto = pro2.Text;
-         
+
 
             db.Producto.Add(pro);
             db.SaveChanges();
-            MessageBox.Show("Datos correctamente guardados");        
+            MessageBox.Show("Datos correctamente guardados");
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            //ProyectoFinal.MiBD.Clientes db = new ProyectoFinal.MiBD.Clientes();
+            ProyectoFinal.MiBD.ProyectoFinal db = new ProyectoFinal.MiBD.ProyectoFinal();
+
+            int id = int.Parse(pro1.Text);
+            var pro = db.Producto.SingleOrDefault(x => x.idProducto == id);
+            //where x.id == id
+            //select x;
+            if (pro != null)
+            {
+                db.Producto.Remove(pro);
+
+                db.SaveChanges();
+                MessageBox.Show("Datos correctamente eliminados");
+            }
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            MainWindow ob = new MainWindow();
+            ob.Show();
+            this.Close();
         }
     }
 }

@@ -44,6 +44,18 @@ namespace ProyectoFinal
             MessageBox.Show("Datos correctamente guardados");
         }
 
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            MainWindow ob = new MainWindow();
+            ob.Show();
+            this.Close();
+        }
+
        
            
         }
