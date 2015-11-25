@@ -8,11 +8,11 @@
         <Label Content="idProducto" HorizontalAlignment="Left" Margin="72,166,0,0" VerticalAlignment="Top" Width="85" FontSize="16"/>
         <Label Content="Precio" HorizontalAlignment="Left" Margin="72,218,0,0" VerticalAlignment="Top" Width="85" FontSize="16"/>
         <Label Content="Cantidad" HorizontalAlignment="Left" Margin="72,268,0,0" VerticalAlignment="Top" Width="85" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="190,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="190,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="190,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="190,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="GUARDAR" HorizontalAlignment="Left" Margin="24,367,0,0" VerticalAlignment="Top" Width="92" Height="37" />
+        <TextBox x:Name="txtd1" HorizontalAlignment="Left" Height="23" Margin="190,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtd2" HorizontalAlignment="Left" Height="23" Margin="190,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtd3" HorizontalAlignment="Left" Height="23" Margin="190,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtd4" HorizontalAlignment="Left" Height="23" Margin="190,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="GUARDAR" HorizontalAlignment="Left" Margin="24,367,0,0" VerticalAlignment="Top" Width="92" Height="37" Click="Button_Click_1" />
         <Button Content="BORRAR" HorizontalAlignment="Left" Margin="138,367,0,0" VerticalAlignment="Top" Width="89" Height="37" />
         <Button Content="REGRESAR MENU" HorizontalAlignment="Left" Margin="245,367,0,0" VerticalAlignment="Top" Width="109" Height="37"/>
 

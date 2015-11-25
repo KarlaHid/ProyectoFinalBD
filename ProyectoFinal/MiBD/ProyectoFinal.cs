@@ -15,6 +15,7 @@ namespace ProyectoFinal.MiBD
         public DbSet<DetallesPedido> Detalles { get; set; }
         public DbSet<Empleados> Empleado { get; set; }
         public DbSet<Pedidos> Pedido { get; set; }
+        public DbSet<Productos> Producto { get; set; }
     
     }
 }

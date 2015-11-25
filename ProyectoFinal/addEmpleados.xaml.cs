@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoFinal.MiBD;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,24 @@ namespace ProyectoFinal
         public addEmpleados()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            //instanciar bd
+            ProyectoFinal.MiBD.ProyectoFinal db = new ProyectoFinal.MiBD.ProyectoFinal();
+
+            Empleados emp = new Empleados();
+
+            emp.idEmpleado = int.Parse(tr1.Text);
+            emp.nomEmpleado = tr2.Text;
+            emp.sueldo = int.Parse(tr3.Text);
+        
+
+
+            db.Empleado.Add(emp);
+            db.SaveChanges();
+            MessageBox.Show("Datos correctamente guardados");
         }
     }
 }

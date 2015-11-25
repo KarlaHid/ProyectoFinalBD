@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoFinal.MiBD;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,20 @@ namespace ProyectoFinal
         public addProductos()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ProyectoFinal.MiBD.ProyectoFinal db = new ProyectoFinal.MiBD.ProyectoFinal();
+            Productos pro = new Productos();
+
+            pro.idProducto = int.Parse(pro1.Text);
+            pro.nomProducto = pro2.Text;
+         
+
+            db.Producto.Add(pro);
+            db.SaveChanges();
+            MessageBox.Show("Datos correctamente guardados");        
         }
     }
 }
